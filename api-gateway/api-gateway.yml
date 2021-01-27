@@ -10,12 +10,12 @@ spring:
         - id: zipkin_route
           uri: http://zipkin-service:9411
           predicates:
-            - Path=/oss/zipkin
+            - Path=/oss/zipkin**
           filters:
-            - RewritePath=/oss/zipkin,/
+            - RewritePath=/oss/zipkin/,/
         - id: eureka_route
           uri: http://eureka-service:8761
           predicates:
-            - Path=/oss/eureka
+            - Path=/oss/eureka**
           filters:
             - RewritePath=/oss/eureka/,/
