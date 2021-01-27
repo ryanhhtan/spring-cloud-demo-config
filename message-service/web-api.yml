@@ -1,0 +1,4 @@
+spring:
+  zipkin:
+    baseUrl: http://zipkin-service:9411
+eureka.client.serviceUrl.defaultZone: http://eureka-service:8761/eureka
