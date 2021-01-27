@@ -7,3 +7,11 @@ spring:
           uri: http://message-service:8080
           predicates:
             - Path=/message**
+        - id: zipkin_route
+          uri: http://zipkin-service:9411
+          predicates:
+            - Path=/oss/zipin**
+        - id: eureka_route
+          uri: http://eureka-service:8761
+          predicates:
+            - Path=/oss/eureka**
