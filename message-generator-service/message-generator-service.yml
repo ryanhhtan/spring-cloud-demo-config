@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: message-generator-service
     zipkin:
       baseUrl: http://zipkin-service:9411
 eureka:
