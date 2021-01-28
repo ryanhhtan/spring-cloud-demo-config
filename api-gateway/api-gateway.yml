@@ -10,3 +10,5 @@ spring:
           uri: http://message-service:8080
           predicates:
             - Path=/message**
+logging.level:
+  org.springframework.web.servlet.DispatcherServlet: DEBUG
